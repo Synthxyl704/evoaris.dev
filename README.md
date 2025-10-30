@@ -1,6 +1,6 @@
 # Nothing much to say
 <hr>
-### People lie, and there is almost nothing we can do about it. <br> 
+###People lie, and there is almost nothing we can do about it. <br> 
 <br>
 Sometimes, you value the relationship you have with someone, when you suspect or even believe that they're lying, its indication made by your side will be deemed as rather intrusive, and this will damage your said relationship. <br> <br>
 
