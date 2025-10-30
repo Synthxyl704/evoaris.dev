@@ -7,5 +7,4 @@ Sometimes, you value the relationship you have with someone, when you suspect or
 Because you value it, you take a step back from addressing the heart of the matter, even though the baseline is genuine, the indication abstraction which goes unsaid becomes a takeaway for accentuating it into a superficial relationship, but that surely doesnt mean that the entire time it was fake, right? ...right? 
 
 <hr>
-<br>
 If I were given everything I wanted, I would never value it, and that is why I must keep striving.
