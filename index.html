@@ -3,226 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvoAris_</title>
-    <link rel="stylesheet" href="styleX.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="back.js"></script>
+    <title>EVO_X</title>
+    
 </head>
 <body>
-    <div class="bg-squares">
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-        <div class="bg-square"></div>
-    </div>
 
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">ISO - ↑↓</div>
-            <nav class="nav">
-                <a href="#index" class="nav-link">INDEX</a>
-                <a href="#skills" class="nav-link">T.I.D</a>
-                <a href="#projects" class="nav-link">PROJECT[X]</a>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero" id="index">
-        <div class="hero-lines">
-            <div class="line line-right"></div>
-            <div class="line line-left"></div>
-        </div>
-
-        <div class="hero-content">
-            <!-- <h1 class="hero-title">&lt;/ARAXIAVANT&gt;</h1> -->
-             <h1 class="hero-title">7Tiamatr/x</h1>
-             <!-- <h1 class="hero-title">KRAXiCHORD_</h1> -->
-            <div class="accent-line line-mono"></div>
-            <h2 class="hero-subtitle">FERVENT (NOVICE+) DEVELOPER</h2>
-            <p class="hero-description">
-                A 17 y/o pragmatic student who's an [Si] systems ardent.
-                <!-- <br>It will not stop me regardless. -->
-            </p>
-
-            <div class="hero-bars">
-                <div class="bar bar-primary"></div>
-                <div class="bar bar-secondary"></div>
-            </div>
-        </div>
-
-        <div class="geometric-shapes">
-            <div class="shape shape-rect-large"></div>
-            <div class="shape shape-square"></div>
-            <div class="shape shape-square-filled"></div>
-        </div>
-
-        <!-- i hate life -->
-        <div class="scroll-indicator">
-            <div>Scroll!</div>
-            <div class="arrow">↓</div>
-        </div>
-    </section>
-
-<section id="skills" class="section skills-section">
-    <div class="section-line section-line-left"></div>
-
-    <div class="section-content">
-        <div class="section-accent-line line-mono-alt"></div>
-        <h2 class="section-title">THINGS I DO</h2>
-        <div class="accent-line line-mono"></div>
-
-        <p class="section-description">
-        <ul class="fancy-bullets">
-            <li>I usually just do C/C++ stuff on <b> x86-64 EndeavourOS linux. </b></li>
-            <li>I like static typing but not necessarily low-level programming. (LOL)</li>
-            <li>Proficient in none, familiar with several.</li>
-        </ul>
-        </p>
+    <!-- top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
         
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon"> L </div>
-                <h3 class="skill-label">LANGUAGES</h3>
-                <ul class="skill-list">
-                    <li>Standard C</li>
-                    <li>C++26</li>
-                    <li>Vanilla JavaScript</li>
-                    <li>SQL (i hate it)</li>
-                    <!-- <li>Bash</li> -->
-                </ul>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">X</div>
-                <h3 class="skill-label">Concepts</h3>
-                <ul class="skill-list">
-                    <li>Computer Architecture</li>
-                    <li>Intrinsic application working</li>
-                    <li>Internet Architecture</li>
-                    <li>Compiler theory & design</li>
-                </ul>
-            </div>
+            <span class="top-bar-item">■ SUBCORE::EMPLOYEE_ID=067</span>
+            <span>‎ |‎ Vx1.2 SUBSPACE CORE | ENERGY EXTRACTION MANAGEMENT STAFF </span> 
         </div>
+        
+        <div class="top-bar-right">
+            <span>◢ NET: !INSECURE!</span>
+            <span> | PWR: 67% | </span>
+            <span id="clock">$ { waiting_for_1000_milliseconds }</span>
+        </div>
+        
     </div>
 
-    <div class="geometric-accent">
-        <div class="shape-large"></div>
-        <div class="shape-medium"></div>
+<!-- i really like "reactor" interfaces, they scream pure hi-tech -->
+    <div class="main-container">
+        <aside class="sidebar">
+        
+            <div class="profile">
+                <div class="terminal-icon">(✦)</div>  <!-- &gt;_ -->
+                
+                <h2>7Tiamatr/x_</h2>
+                <p>C/C++ programmer </p> <!-- i dont like SQL -->
+                
+                <div class="profile-stats">
+                    <div class="stat-box">
+                        <div class="stat-label">AxS</div> <!-- alloted execution space -->
+                        <div class="stat-value">[RM-CR]</div> <!-- reactor management - control room -->
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-label">EXP</div>
+                        <div class="stat-value">TIER 2</div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- sidebar NAV_MODULE -->
+            <div class="nav-section">
+                <div class="nav-title">[NAV-I]: SUBNAV_INTERFACE</div>
+                
+                <div class="nav-item" onclick="toggleNav(this)">
+                    <div class="nav-item-header">
+                        <span class="nav-item-title">INFO OVERVIEW</span>
+                        <span><span class="arrow">▸</span> <span class="nav-item-number">01</span></span>
+                    </div>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-item">[EXP]: Experience level of the employee, the volatile numeric is inversely proportional to the degree of privilege, total 5 tiers exist. </div> 
+                        <div class="dropdown-item">[AxS]: Allocated eXecution Space, each employee has an AxS for suiting their designated work.</div>
+                        <div class="dropdown-item">[RM-CR]: (subspace) Reactor Management (main) Control Room, the main subspace reactor control room.</div>
+                        <div class="dropdown-item">[SR]: Subspace Reactor, contains a wormhole link that has been opened in a star at an unknown location and co-ordinates.</div>
+                        <div class="dropdown-item">[RM-CR]: (subspace) Reactor Management (main) Control Room</div>
+                        <div class="dropdown-item">[ExR-M]: Extraction rate - Manager, designated employees are 
+                                                            important faculty who have subspace reactor emission
+                                                            threshold theory knowledge in order to optimize and extract 
+                                                            energy without blowing up the reactor.</div>
+                    </div>
+                </div>
+
+                <div class="nav-item" onclick="toggleNav(this)">
+                    <div class="nav-item-header">
+                        <span class="nav-item-title">EMPLOYEE PROJECTS</span>
+                        <span><span class="arrow">▸</span> <span class="nav-item-number">02</span></span>
+                    </div>
+                    <div class="nav-dropdown">
+                        <br>
+                        <a class="dropdown-item" href="https://github.com/Synthxyl704/ARX-compiler" 
+                          style="text-decoration: none;" target="_blank">[ACTIVE] ARX compiler</a> <br><br>
+
+                        <a class="dropdown-item" href="https://github.com/Synthxyl704/iSonic-ETL" 
+                           style="text-decoration: none;" target="_blank">[ACTIVE] iSonic - ETL</a> <br><br>
+
+                        <a class="dropdown-item" href="https://github.com/Synthxyl704/C3-Exposition" 
+                           style="text-decoration: none;" target="_blank">[ACTIVE] C3 exposition</a> <br><br>
+
+                    </div>
+                </div>
+
+                <div class="nav-item" onclick="toggleNav(this)">
+                    <div class="nav-item-header">
+                        <span class="nav-item-title">EMPLOYEE LOGS</span>
+                        <span><span class="arrow">▸</span> <span class="nav-item-number">04</span></span>
+                    </div>
+                    <div class="nav-dropdown">
+                        <div class="dropdown-item">[CORE NOTICE] - Employee manually reinstated processor unit.</div>
+                        <div class="dropdown-item">Extraction rate increased to 67%</div>
+                        <div class="dropdown-item">Assembly extraction decreased to MINIMUM</div>
+                    </div>
+                </div>
+
+                <div class="nav-item" onclick="toggleNav(this)">
+                    <div class="nav-item-header">
+                        <span class="nav-item-title">EMPLOYEE CONTACT</span>
+                        <span><span class="arrow">▸</span> <span class="nav-item-number">05</span></span>
+                    </div>
+                    <div class="nav-dropdown">
+                        <!-- <div class="dropdown-item"></div> -->
+                        <div class="dropdown-item">GitHub</div>
+                        <div class="dropdown-item">$ { __LinkedIn_067__ }</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="hero-section">
+                <div class="status-indicators">
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+                <div class="RM-role">EXTRACTION RATE MANAGER</div>
+                <!-- <h1 class="hero-title">#1</h1> -->
+                <h1 class="hero-subtitle">[RM] SILICON SYSTEMS ARDENT</h1>
+                <p class="hero-description">
+                    7Tiamatr/x is the ExR - M in [RM-CR] who programs in <b>C/C++</b> 
+                    and is an asset due to him being flexible in catching up with any programming language he is trained with,
+                    which allows him to program extraction conditionals and tests for the subspace reactor efficiently. <br> <br>
+                    </p>
+                    <h1 class="hero-subtitle">[NOTE]:</h1>
+                    <p class="hero-description">
+                    - Employee displays idiosyncratic "salty" behaviour intermittently as per the training language. <br>
+                    - Employee is 17 years old, we have found workarounds for keeping the closure legal. <br>
+                    - Once blew up the extraction assembly equipment due to a deliberatly set higher extraction rate.
+                        
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn">&gt;_ INITIATE RADIO COMM</button>
+                    <button class="btn btn-outline">${EMP067_button_2_content}</button>
+                </div>
+            </section>
+
+            <!-- projects sect -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">ARX compiler</h3>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <p class="project-description">
+                        A "derivative" statically typed language inspired from <b>[C++]</b> and <b>[Assembly]</b>. <br> <br>
+                        Employee had started this with mediocre C knowledge, but learnt a lot about how compilers work from this as part of his research. <br> <br>
+                        As of current, the lexical analyzer is being built, employee appears to be awfully slow at it due to college and procrastination. 
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-type">TYPE: COMPILER INTRINSICS & DESIGN</span>
+                        <a href="https://github.com/Synthxyl704/ARX-compiler" target="_blank" class="project-link">ACCESS PROJECT SOURCE ›</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">iSonic - ETL</h3>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <p class="project-description">
+                    A C++ (x64) targetted linux command-line / CLI program which utilizes YT-DLP & FFmpeg
+                    for audio extraction and installation setting. <br> <br>
+                    Rich with various features such as transcoding, metadata listing, custom format, etc. <br> <br>
+                    Employee is active on the project, however it is important to note that it is COMPLETE for its original purpose. 
+                        
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-type">TYPE: TERMINAL TIER CONTROL SYSTEM</span>
+                        <a href="https://github.com/Synthxyl704/iSonic-ETL" target="_blank" class="project-link">ACCESS PROJECT SOURCE ›</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">ARGV Image Downloader</h3>
+                        <span class="project-status" style="color:red;">INACTIVE</span>
+                    </div>
+                    <p class="project-description">
+                        A terminal control system for downloading images off the internet with just its URL, 
+                        made in <b>[C]</b> and is built using <b>[imagemagick API / library]</b>. <br> <br>
+                        Consists of various feats such as resizing, rotation, grayscaling index, etc. <br> <br>
+                        [NOTE] - The code is absolutely horrendous, employee sucked during making this project 
+                        and the output system's readability is more "shit" than actually being readable, however is very optimized and simple once understood.
+                    </p>
+                    <div class="project-meta">
+                        <span class="project-type">TYPE: TERMINAL TIER CONTROL SYSTEM</span>
+                        <a href="https://github.com/Synthxyl704/ARGV_image_downloader" target="_blank" class="project-link">ACCESS PROJECT SOURCE ›</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                © ISOARIS 2025 | INSECURE_CONNECTION_ESTABLISHED
+            </footer>
+        </main>
     </div>
-</section>
-
-    <section id="projects" class="section projects-section">
-        <div class="section-line section-line-right"></div>
-
-        <div class="section-content">
-            <div class="section-accent-line line-mono"></div>
-            <h2 class="section-title">PROZƎCTX</h2>
-            <div class="accent-line line-mono-alt"></div>
-
-            <p class="section-description">
-                My projects are not well known but I have a lot of fun making them. <br>
-                As of 30th October, I have 2 main projects i've worked on.
-                <!-- <hr> -->
-            <div class="projects-list">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">+</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title"><a href="https://github.com/Synthxyl704/ARX-compiler" target="_blank">ARX compiler</a></h3>
-                        <p class="project-text">
-                            A <b>"derivative"</b> statically typed language inspired from 
-                            <span style="background-color: rgba(216, 237, 255, 0.21); color: whitesmoke;"> 
-                                C++ and Assembly. 
-                            </span> <br>
-                            I had started this with mediocre C knowledge, but I learnt a lot about how compilers work from this as part of my research. <br>
-                            As of current, the lexical analyzer is being built, im awfully slow at it due to college and procrastination.
-                            <br>
-                            <br>
-                            <hr>
-                            <br>
-                            <!-- <p> -->
-                            Special thanks to
-                            <a href="https://github.com/HACKE-RC" target="_blank"
-                               style="text-decoration: none; 
-                                      color: greenyellow; 
-                                      rgba(216, 237, 255, 0.21);">
-                            @HACKE-RC
-                            </a>
-                            for this project's inspiration! <br> I have full intent to complete this - somehow, someday.
-                        <!-- </p> -->
-                        </p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">+</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title"><a href="https://github.com/Synthxyl704/iSonic-ETL" target="_blank">iSonic - ETL</a></h3>
-                        <p class="project-text">
-                            A<b><span style="color: white;">C++</span></b>(x64) targetted linux command-line / CLI program which utilizes 
-                            <span style="rgba(216, 237, 255, 0.21);
-                                         color: rgb(255, 255, 255);">
-                                YT-DLP & FFmpeg 
-                            </span>for downloading <b>audio files </b>
-                            straight into your set directory! <br>
-                            <br> <b><span style="color: rgb(185, 255, 255);"> E </span></s></b> - Extract (scrapes website for embedded A/V files)
-                            <br> <b><span style="color: rgb(185, 255, 255);"> T </span></s></b> - Transform (transcode) using FFmpeg
-                            <br> <b><span style="color: rgb(185, 255, 255);"> L </span></s></b> - Load (set) into your directory of download point / path.
-                            <!-- <br> <br> <hr> <br>
-                            Pretty cool right? <br>I use it very frequently for downloading audio's from YT, soundcloud (no spotify sadly), etc. <br>Try it out! -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bottom-lines">
-            <div class="vertical-line"></div>
-            <div class="vertical-line"></div>
-            <div class="vertical-line"></div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-grid">
-                <div class="footer-item">
-                    <div class="footer-accent-line line-mono"></div>
-                    <h3 class="footer-label">GiTHUB</h3>
-                    <p class="footer-text">Synthxyl704 _ 7Tiamatr/x_ </p>
-                </div>
-                <div class="footer-item">
-                    <div class="footer-accent-line line-mono-alt"></div>
-                    <h3 class="footer-label">Discord</h3>
-                    <p class="footer-text">$ { __discord__userID__ }</p>
-                </div>
-                <div class="footer-item">
-                    <div class="footer-accent-line line-mono"></div>
-                    <h3 class="footer-label">Erm</h3>
-                    <p class="footer-text">i didnt thought id make 3 of these<br>i play rhythm games<br>this looks so goofy while the theme looks bootleg professional </p>
-                </div>
-            </div>
-
-            <div class="footer-divider"></div>
-
-            <div class="footer-bottom">
-                <p>© 2025 ARAXIAVANT.</p>
-                <p>0x40EvoAris_</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scriptX.js"></script>
 </body>
 </html>
