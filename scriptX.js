@@ -36,7 +36,7 @@ var drawRadarChart = () => {
     
     // pentagon
     ctx.strokeStyle = radarConfig.colors.grid;
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 0.85; // pentagonal lines
     for (let inx = 1; inx <= levels; inx += 1) {
         ctx.beginPath();
         const levelRadius = (radius / levels) * inx;
@@ -50,7 +50,7 @@ var drawRadarChart = () => {
     
     // multiple axis
     ctx.strokeStyle = radarConfig.colors.axis;
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 1 // axis lines
     for (let inx = 0; inx < numPoints; inx += 1) {
         const angle = (Math.PI * 2 / numPoints) * inx - Math.PI / 2;
         const x = centerX + radius * Math.cos(angle);
@@ -66,7 +66,7 @@ var drawRadarChart = () => {
     ctx.beginPath();
     ctx.strokeStyle = radarConfig.colors.line;
     ctx.fillStyle = radarConfig.colors.fill;
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 0.85; // showcase line 
     
     for (let inx = 0; inx <= numPoints; inx += 1) {
         const angle = (Math.PI * 2 / numPoints) * inx - (Math.PI / 2);
