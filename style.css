@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
 }
 
 :root {
-    --lime: #c4ff00;
+    /* #c4ff00 */
+    --lime: #c4ff00; /* main accent */
     --lime-dark: #9acc00;
     --black: #000000;
     --gray: #0a0a0a;
@@ -15,7 +18,7 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'JetBrains Mono', monospace;
     background: var(--black);
     color: var(--white);
     font-size: 12px;
@@ -31,11 +34,14 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 11px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .top-bar-left {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .top-bar-item {
@@ -45,8 +51,8 @@ body {
 .top-bar-right {
     display: flex;
     gap: 15px;
-    color: var(--white) ;
-    /* color: red:  */
+    color: var(--white);
+    flex-wrap: wrap;
 }
 
 /* main RM-UI-like layout */
@@ -56,7 +62,7 @@ body {
     height: calc(100vh - 40px);
 }
 
-/* sidebax */
+/* sidebar */
 .sidebar {
     background: var(--gray);
     border-right: 1px solid var(--border);
@@ -118,7 +124,58 @@ body {
     color: var(--lime);
 }
 
-/* Navigation */
+.skill-matrix-section {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--black);
+}
+
+.section-title {
+    font-size: 10px;
+    color: var(--lime);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid var(--border);
+    padding: 8px;
+    background: var(--gray);
+}
+
+.radar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.radar-legend {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 9px;
+    color: var(--white);
+}
+
+.legend-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--lime);
+    flex-shrink: 0;
+}
+
+.legend-value {
+    margin-left: auto;
+    color: var(--lime);
+    font-weight: 600;
+}
+
 .nav-section {
     padding: 20px;
     border-bottom: 1px solid var(--border);
@@ -143,7 +200,7 @@ body {
 
 .nav-item:hover {
     border-color: var(--lime);
-    background:   #080808;
+    background: #080808;
 }
 
 .nav-item-header {
@@ -169,7 +226,7 @@ body {
 }
 
 .nav-item.active .nav-dropdown {
-    max-height: 500px;
+    max-height: 700px;
 }
 
 .nav-item.active .arrow {
@@ -209,17 +266,50 @@ body {
     margin-bottom: 30px;
     background: var(--gray);
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "indicators"
+        "role"
+        "subtitle"
+        "description"
+        "note-title"
+        "note-description"
+        "buttons";
+
+    background-image: 
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 40px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 40px);
+    background-size: 40px 40px;
 }
 
-/* when will this ever end? */
+.status-indicators {
+    grid-area: indicators;
+    justify-self: end;
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    background: var(--lime);
+}
+
+.indicator:nth-child(2) {
+    background: var(--lime);
+    opacity: 0.8;
+}
 
 .RM-role {
+    grid-area: role;
     display: inline-block;
     font-size: 9px;
     color: var(--lime);
     border: 1px solid var(--lime);
     padding: 3px 8px;
-    margin-bottom: 20px;
+    width: fit-content;
 }
 
 .hero-title {
@@ -230,10 +320,14 @@ body {
 }
 
 .hero-subtitle {
+    grid-area: subtitle;
     font-size: 28px;
     color: var(--lime);
-    margin-bottom: 20px;
     letter-spacing: 2px;
+}
+
+.hero-subtitle:nth-of-type(2) {
+    grid-area: note-title;
 }
 
 .hero-description {
@@ -241,13 +335,22 @@ body {
     color: var(--white);
     opacity: 0.7;
     line-height: 1.6;
-    margin-bottom: 30px;
     max-width: 800px;
 }
 
+.hero-description:nth-of-type(1) {
+    grid-area: description;
+}
+
+.hero-description:nth-of-type(2) {
+    grid-area: note-description;
+}
+
 .hero-buttons {
+    grid-area: buttons;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -258,7 +361,7 @@ body {
     font-size: 11px;
     cursor: pointer;
     transition: all 0.2s;
-    font-family: 'Courier New', monospace;
+    font-family: 'JetBrains Mono', monospace;
     letter-spacing: 1px;
 }
 
@@ -277,26 +380,7 @@ body {
     color: var(--black);
 }
 
-.status-indicators {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    gap: 8px;
-}
-
-.indicator {
-    width: 8px;
-    height: 8px;
-    background: var(--lime);
-}
-
-.indicator:nth-child(2) {
-    background: var(--lime);
-    opacity: 0.6;
-}
-
-/* projects in a grid format, need to keep them optimizied in text length otherwise its ugly as fuck */
+/* projects in a grid format */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -332,6 +416,7 @@ body {
     color: var(--lime);
     border: 1px solid var(--lime);
     padding: 3px 8px;
+    white-space: nowrap;
 }
 
 .project-description {
@@ -349,6 +434,8 @@ body {
     padding-top: 15px;
     border-top: 1px solid var(--border);
     font-size: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .project-type {
@@ -366,7 +453,7 @@ body {
     text-decoration: underline;
 }
 
-/* i like feet */
+/* footer */
 footer {
     padding: 20px;
     text-align: center;
@@ -374,4 +461,165 @@ footer {
     color: var(--white);
     opacity: 0.3;
     border-top: 1px solid var(--border);
+}
+
+/* RD; media queries */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-subtitle {
+        font-size: 24px;
+    }
+    
+    .main-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 240px 1fr;
+    }
+    
+    .hero-section {
+        padding: 30px;
+    }
+    
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    
+    .terminal-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    .hero-section {
+        padding: 25px;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .top-bar {
+        padding: 8px 15px;
+    }
+    
+    .profile {
+        padding: 20px 15px;
+    }
+    
+    .nav-section {
+        padding: 15px;
+    }
+    
+    .skill-matrix-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 11px;
+    }
+    
+    .top-bar {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    
+    .top-bar-left,
+    .top-bar-right {
+        gap: 10px;
+    }
+    
+    .hero-section {
+        padding: 20px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .hero-title {
+        font-size: 20px;
+    }
+    
+    .hero-description {
+        font-size: 12px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+    
+    .project-card {
+        padding: 20px;
+    }
+    
+    .terminal-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+    
+    .profile h2 {
+        font-size: 14px;
+    }
+    
+    .profile-stats {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .hero-title {
+        font-size: 18px;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .project-status {
+        align-self: flex-start;
+    }
 }
