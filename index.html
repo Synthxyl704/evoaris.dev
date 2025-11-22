@@ -19,9 +19,9 @@
         </div>
         
         <div class="top-bar-right">
-            <span>◢ NET: !INSECURE!</span>
-            <span> | PWR: 67% | </span>
-            <span id="clock">$ { waiting_for_1000_milliseconds }</span>
+            <span> ᚼᛑ NET: <span style="color: black !important; background-color: red;">!INSECURE!</span></span>
+            <span> | PWR: <span style="color: #c4ff00;"> 67% </span> | </span>
+            <span id="clock"> <span style="color: #ff1c1c;">${1E_[+1]_waiting_for_attribute} </span></span>
         </div>
         
     </div>
@@ -31,7 +31,7 @@
         <aside class="sidebar">
         
             <div class="profile">
-                <div class="terminal-icon">(✦)</div>  <!-- &gt;_ -->
+                <div class="terminal-icon">[7]</div>  <!-- &gt;_ -->
                 
                 <h2>7Tiamatr/x_</h2>
                 <p>C/C++ programmer </p> <!-- i dont like SQL -->
@@ -45,14 +45,13 @@
                     <div class="stat-box">
                         <div class="stat-label">EXP</div>
                         <div class="stat-value">TIER 2</div>
-                        
                     </div>
                 </div>
             </div>
 
             <!-- sidebar NAV_MODULE -->
             <div class="nav-section">
-                <div class="nav-title">[NAV-I]: SUBNAV_INTERFACE</div>
+                <div class="nav-title">[NAV-I]: SUBNAVIGATION INTERFACE</div>
                 
                 <div class="nav-item" onclick="toggleNav(this)">
                     <div class="nav-item-header">
@@ -63,7 +62,7 @@
                         <div class="dropdown-item">[EXP]: Experience level of the employee, the volatile numeric is inversely proportional to the degree of privilege, total 5 tiers exist. </div> 
                         <div class="dropdown-item">[AxS]: Allocated eXecution Space, each employee has an AxS for suiting their designated work.</div>
                         <div class="dropdown-item">[RM-CR]: (subspace) Reactor Management (main) Control Room, the main subspace reactor control room.</div>
-                        <div class="dropdown-item">[SR]: Subspace Reactor, contains a wormhole link that has been opened in a star at an unknown location and co-ordinates.</div>
+                        <div class="dropdown-item">[SR]: Subspace Reactor, contains a wormhole link that has been opened in a neutron star in constellation [REDATCED], 2 million light years across.</div>
                         <div class="dropdown-item">[RM-CR]: (subspace) Reactor Management (main) Control Room</div>
                         <div class="dropdown-item">[ExR-M]: Extraction rate - Manager, designated employees are 
                                                             important faculty who have subspace reactor emission
@@ -94,7 +93,7 @@
                 <div class="nav-item" onclick="toggleNav(this)">
                     <div class="nav-item-header">
                         <span class="nav-item-title">EMPLOYEE LOGS</span>
-                        <span><span class="arrow">▸</span> <span class="nav-item-number">04</span></span>
+                        <span><span class="arrow">▸</span> <span class="nav-item-number">03</span></span>
                     </div>
                     <div class="nav-dropdown">
                         <div class="dropdown-item">[CORE NOTICE] - Employee manually reinstated processor unit.</div>
@@ -106,12 +105,47 @@
                 <div class="nav-item" onclick="toggleNav(this)">
                     <div class="nav-item-header">
                         <span class="nav-item-title">EMPLOYEE CONTACT</span>
-                        <span><span class="arrow">▸</span> <span class="nav-item-number">05</span></span>
+                        <span><span class="arrow">▸</span> <span class="nav-item-number">04</span></span>
                     </div>
                     <div class="nav-dropdown">
                         <!-- <div class="dropdown-item"></div> -->
-                        <div class="dropdown-item">GitHub</div>
+                        <div class="dropdown-item">GitHub - Synthxyl704</div>
                         <div class="dropdown-item">$ { __LinkedIn_067__ }</div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- radar -->
+            <div class="skill-matrix-section">
+                <div class="section-title">EXPOSITION CHART</div>
+                <div class="radar-container">
+                    <canvas id="radarChart" width="220" height="220"></canvas>
+                </div>
+                <div class="radar-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot"></span>
+                        <span>C</span>
+                        <span class="legend-value">67%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot"></span>
+                        <span>C++</span>
+                        <span class="legend-value">86%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot"></span>
+                        <span>University</span>
+                        <span class="legend-value">72%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot"></span>
+                        <span>Academics</span>
+                        <span class="legend-value">45%</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot"></span>
+                        <span>Theoreticals</span>
+                        <span class="legend-value">92%</span>
                     </div>
                 </div>
             </div>
@@ -122,15 +156,20 @@
                 <div class="status-indicators">
                     <div class="indicator"></div>
                     <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <!-- <div class="indicator"></div> -->
                 </div>
                 <div class="RM-role">EXTRACTION RATE MANAGER</div>
                 <!-- <h1 class="hero-title">#1</h1> -->
                 <h1 class="hero-subtitle">[RM] SILICON SYSTEMS ARDENT</h1>
                 <p class="hero-description">
-                    7Tiamatr/x is the ExR - M in [RM-CR] who programs in <b>C/C++</b> 
+                    7Tiamatr/x is the <span style="color: #ceff2c;"> ExR - M </span> in [RM-CR] who programs in <b>C/C++</b> 
                     and is an asset due to him being flexible in catching up with any programming language he is trained with,
-                    which allows him to program extraction conditionals and tests for the subspace reactor efficiently. <br> <br>
-                    </p>
+                    which allows him to program extraction conditionals and tests for the subspace reactor efficiently. <br> <br>    
+                </p>
+
+                     
+
                     <h1 class="hero-subtitle">[NOTE]:</h1>
                     <p class="hero-description">
                     - Employee displays idiosyncratic "salty" behaviour intermittently as per the training language. <br>
@@ -183,7 +222,7 @@
                 <div class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">ARGV Image Downloader</h3>
-                        <span class="project-status" style="color:red;">INACTIVE</span>
+                        <span class="project-status" style="color:red; border: 1px solid red;">INACTIVE</span>
                     </div>
                     <p class="project-description">
                         A terminal control system for downloading images off the internet with just its URL, 
