@@ -9,7 +9,7 @@
 :root {
     /* #c4ff00 */
     --lime: #c4ff00; /* main accent */
-    --lime-dark: #9acc00;
+    --lime-dark: #9acc00; /* THE CSS KEEPS F_CKING BREAKING OH MY GOD */
     --black: #000000;
     --gray: #0a0a0a;
     --gray-light: #1a1a1a;
